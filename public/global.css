@@ -35,7 +35,7 @@
   --accent-800: #cecb00;
   --accent-900: #969300;
   /* neutral Color */
-  --neutral-white: #e4dee4;
+  --neutral-white: #F4FAFF;
   --neutral-black: #1c1d21;
 }
 
@@ -68,6 +68,8 @@ h1,
 h2,
 h3{
 	line-height: 1em;
+	padding: 0;
+	margin: 0;
 }
 
 ul,
@@ -93,4 +95,9 @@ li{
 a{
 	text-decoration: none;
 	color: inherit;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
 }
