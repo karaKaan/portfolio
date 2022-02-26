@@ -22,7 +22,7 @@
       span.classList.remove("animated", "rubberBand")
     );
   };
-  
+
 </script>
 
 {#if type === "bigTitle"}
