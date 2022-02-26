@@ -15,10 +15,10 @@
       <div class="icon-wrapper">
         <IconLink
           icon="akar-icons:github-fill"
-          href="https://www.google.de"
+          href="https://github.com/karaKaan"
           size={35}
         />
-        <IconLink icon="akar-icons:linkedin-box-fill" href="" size={35} />
+        <IconLink icon="akar-icons:linkedin-box-fill" href="https://www.linkedin.com/in/kaan-kara/" size={35} />
       </div>
     </div>
   </div>
@@ -27,6 +27,7 @@
 <style>
   .wrapper {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20%;
   }
   .nav-wrapper {
     display: flex;
