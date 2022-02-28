@@ -2,23 +2,20 @@
     import Icon from '@iconify/svelte'
     import {SkillsIn, SkillsOut} from '../../../utils/stores/SkillsStore'
     export let src
-
-    let left = "40%"
-    let top = "-10%"
 </script>
 
 <div class="wrapper">
     <div class="outer-ring">
         {#each $SkillsOut as skill (skill.id)}
             <span class="icon" class:circle={skill.needCircle} style="left: {skill.left}; top:{skill.top}; ">
-                <Icon icon={skill.icon} width={60}/>
+                <Icon icon={skill.icon} width={55}/>
             </span>
         {/each}
     </div>
     <div class="inner-ring">
         {#each $SkillsIn as skill (skill.id) }
             <span class="inner-icon " class:circle={skill.needCircle} style="left: {skill.left}; top:{skill.top};">
-                <Icon icon={skill.icon} width={60} />
+                <Icon icon={skill.icon} width={55} />
             </span>
         {/each}
     </div>
@@ -28,12 +25,12 @@
 <style>
 
     .wrapper {
-        position: relative;
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 25%;
-        bottom: 50px;
+        left: 70%;
+        top: 50%;
     }
 
     .icon,

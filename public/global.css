@@ -96,6 +96,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+button {
+  font-family: "Fira Sans Condensed", sans-serif;
+
+}
 
 .container {
   width: 1400px;

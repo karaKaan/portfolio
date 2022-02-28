@@ -27,7 +27,7 @@
 <style>
   .wrapper {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .nav-wrapper {
     display: flex;

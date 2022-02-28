@@ -26,7 +26,7 @@
 </script>
 
 {#if type === "bigTitle"}
-  <h1 class="wrapper container">
+  <h1 class="wrapper">
     {#each obj as letter (letter.id)}
       <span
         id={letter.id}
@@ -39,7 +39,7 @@
     {/each}
   </h1>
 {:else if type === "title"}
-  <h1 class="container">
+  <h1 >
     {#each obj as letter (letter.id)}
       <span
         id={letter.id}
