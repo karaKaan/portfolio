@@ -105,6 +105,9 @@ button {
   width: 1400px;
   margin: auto;
 }
+.section {
+  margin-bottom: 20%;
+}
 
 /* ANIMATION RUBBER */
 .rubber-span {
