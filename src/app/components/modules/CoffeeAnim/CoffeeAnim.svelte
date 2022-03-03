@@ -50,7 +50,7 @@
             background-position: -1350px -40px;
         }
         100% {
-            background-position: 0px -200px;
+            background-position: -1800px -200px;
         }
 
     }
