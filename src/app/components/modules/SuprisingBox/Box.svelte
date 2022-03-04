@@ -63,6 +63,9 @@
     height: 100%;
     backface-visibility: hidden;
   }
+  .card-back h2{
+      margin-top: 1em;
+  }
   .card-front {
     background: var(--accent-500);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);

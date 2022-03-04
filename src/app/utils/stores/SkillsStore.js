@@ -123,13 +123,13 @@ export const Softskill = writable([
     id: 1,
     title: 'Teamplayer',
     imgSrc: 'team.svg',
-    text: 'Team is very important to work fast quick etc.......',
+    text: '',
     alt: 'That is an Illustration of a Team.',
   },
   {
     id: 2,
     title: 'Fast Learner',
-    text: 'I am a quick Learner, with the help of others it is even faster',
+    text: '',
     imgSrc: 'book.png',
     alt: 'That is an Illustration of a men who reads a book, sitting on top of books.',
 
@@ -137,7 +137,7 @@ export const Softskill = writable([
   {
     id: 3,
     title: 'Solution Oriented',
-    text: 'Team is very important to work fast quick etc.......',
+    text: '',
     imgSrc: 'solution.svg',
     alt: 'That is an Illustration of a men who reads a book, sitting on top of books.',
 
@@ -145,14 +145,14 @@ export const Softskill = writable([
   {
     id: 4,
     title: 'Ambitious',
-    text: 'Team is very important to work fast quick etc.......',
+    text: '',
     imgSrc: 'ambitious.svg',
     alt: 'That is an Illustration of a men sits on a desk and write codes.',
   },
   {
     id: 5,
     title: 'Passionate',
-    text: 'Team is very important to work fast quick etc.......',
+    text: '',
     imgSrc: 'passionate.svg',
     alt: 'That is an Illustration of a men who embraces things that he loves.',
   },
