@@ -7,6 +7,8 @@
   import FadeRight from "./app/components/layout/Fade/FadeRight.svelte";
   import FadeLeft from './app/components/layout/Fade/FadeLeft.svelte'
   import CoffeeAnim from './app/components/modules/CoffeeAnim/CoffeeAnim.svelte'
+  import Box from './app/components/modules/SuprisingBox/Box.svelte'
+  import {Softskill} from './app/utils/stores/SkillsStore'
 
   window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset, document.body.offsetHeight,window.innerHeight);
@@ -36,9 +38,9 @@
       <Solar src="images/profile.png" />
     </div>
   </div>
-  <div class="container wrapper">
+  <div class="container section">
     <FadeRight>
-      <Title type="title" text="Me, Myself & I" />
+      <Title type="title" text="Me, Myself & I" prefix='me'/>
       <Content>
         My passionate for Coding developed in the University. Not because what
         they have taught me, nor the courses that I chose. To explain that, I
@@ -68,23 +70,12 @@
 		<CoffeeAnim />
 	</FadeLeft>
 </div>
-<div class="container section">
-  <div class="content-wrapper">
-    <div>
-      <Title type="bigTitle" prefix="firstTitle" text="👋 Hi, " />
-      <Title type="bigTitle" prefix="secTitle" text="I'm Kaan." />
-      <Title
-        type="bigTitle"
-        prefix="thirdTitle"
-        text="Full Stack Developer."
-      />
-    </div>
-    <div>
-      <Button text="Contact me" primary />
-    </div>
-  </div>
-  <div>
-    <Solar src="images/profile.png" />
+<div class="container section softskills">
+  <Title type='title' text='Softskills' prefix='softskills' />
+  <div class="row">
+    {#each $Softskill as skill (skill.id) }
+    <Box id={skill.id} prefix='softskill' title={skill.title} src={skill.imgSrc} alt={skill.alt} text={skill.text}/>
+    {/each}
   </div>
 </div>
 </main>
@@ -94,5 +85,9 @@
     display: flex;
     flex-flow: column wrap;
     row-gap: 2.5em;
+  }
+  .softskills {
+    flex-direction: column;
+
   }
 </style>

@@ -117,3 +117,43 @@ export const SkillsIn = writable([
     top: "40%",
   },
 ]);
+
+export const Softskill = writable([
+  {
+    id: 1,
+    title: 'Teamplayer',
+    imgSrc: 'team.svg',
+    text: 'Team is very important to work fast quick etc.......',
+    alt: 'That is an Illustration of a Team.',
+  },
+  {
+    id: 2,
+    title: 'Fast Learner',
+    text: 'I am a quick Learner, with the help of others it is even faster',
+    imgSrc: 'book.png',
+    alt: 'That is an Illustration of a men who reads a book, sitting on top of books.',
+
+  },
+  {
+    id: 3,
+    title: 'Solution Oriented',
+    text: 'Team is very important to work fast quick etc.......',
+    imgSrc: 'solution.svg',
+    alt: 'That is an Illustration of a men who reads a book, sitting on top of books.',
+
+  },
+  {
+    id: 4,
+    title: 'Ambitious',
+    text: 'Team is very important to work fast quick etc.......',
+    imgSrc: 'ambitious.svg',
+    alt: 'That is an Illustration of a men sits on a desk and write codes.',
+  },
+  {
+    id: 5,
+    title: 'Passionate',
+    text: 'Team is very important to work fast quick etc.......',
+    imgSrc: 'passionate.svg',
+    alt: 'That is an Illustration of a men who embraces things that he loves.',
+  },
+])
