@@ -121,16 +121,16 @@ export const SkillsIn = writable([
 export const Softskill = writable([
   {
     id: 1,
-    title: 'Teamplayer',
+    title: 'Teamwork',
     imgSrc: 'team.svg',
     text: '',
     alt: 'That is an Illustration of a Team.',
   },
   {
     id: 2,
-    title: 'Fast Learner',
+    title: 'Time Management',
     text: '',
-    imgSrc: 'book.png',
+    imgSrc: 'time.svg',
     alt: 'That is an Illustration of a men who reads a book, sitting on top of books.',
 
   },
@@ -144,49 +144,56 @@ export const Softskill = writable([
   },
   {
     id: 4,
-    title: 'Ambitious',
+    title: 'Critical Thinking',
     text: '',
-    imgSrc: 'ambitious.svg',
+    imgSrc: 'thinking.svg',
     alt: 'That is an Illustration of a men sits on a desk and write codes.',
   },
   {
     id: 5,
-    title: 'Passionate',
+    title: 'Adaptability',
     text: '',
     imgSrc: 'passionate.svg',
+    alt: 'That is an Illustration of a men who embraces things that he loves.',
+  },
+  {
+    id: 6,
+    title: 'Creativity',
+    text: '',
+    imgSrc: 'creative.svg',
     alt: 'That is an Illustration of a men who embraces things that he loves.',
   },
 ])
 
 export const Hardskill = writable([
   {
-    id: 12,
+    id: 1,
     icon: "fa-brands:js-square",
     delay: 200,
   },
   {
-    id: 9,
+    id: 2,
     icon: "akar-icons:react-fill",
     delay: 300,
   },
   {
-    id: 10,
+    id: 3,
     icon: "akar-icons:nextjs-fill",
     delay: 400,
   },
   {
-    id: 11,
+    id: 4,
     icon: "file-icons:test-typescript",
         delay: 500,
   },
 
   {
-    id: 13,
+    id: 5,
     icon: "akar-icons:html-fill",
         delay: 600,
   },
   {
-    id: 14,
+    id: 6,
     icon: "akar-icons:css-fill",
         delay: 700,
   },
@@ -201,51 +208,50 @@ export const Hardskill = writable([
     icon: "file-icons:styledcomponents",
         delay: 900,
   },
-
   
   {
-    id: 15,
+    id: 9,
     icon: "cib:svelte",
         delay: 1000,
   },
 
   {
-    id: 16,
+    id: 10,
     icon: "fa-brands:node-js",
         delay: 1100,
   },
   {
-    id: 17,
+    id: 11,
     icon: "bxl:vuejs",
         delay: 1200,
   },
   {
-    id: 1,
+    id: 12,
     icon: "bi:git",
         delay: 1300,
   },
   {
-    id: 2,
+    id: 13,
     icon: "file-icons:jest",
         delay: 1400,
   },
   {
-    id: 3,
+    id: 14,
     icon: "simple-icons:cypress",
         delay: 1500,
   },
   {
-    id: 4,
+    id: 15,
     icon: "ant-design:ci-circle-filled",
         delay: 1600,
   },
   {
-    id: 5,
+    id: 16,
     icon: "bxl:firebase",
         delay: 1700,
   },
   {
-    id: 6,
+    id: 17,
     icon: "carbon:sql",
         delay: 1800,
     },
