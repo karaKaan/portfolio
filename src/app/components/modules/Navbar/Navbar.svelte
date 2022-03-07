@@ -15,7 +15,6 @@
     <div class="nav-items">
       <NavLink text={"About"} href='#about' />
       <NavLink text={"Skills"} href='#skills'/>
-      <NavLink text={"Contact"} href='#contact'/>
       <div class="icon-wrapper">
         <IconLink
           icon="akar-icons:github-fill"

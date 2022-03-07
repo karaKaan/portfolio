@@ -14,7 +14,6 @@
   
 
   window.addEventListener('scroll', () => {
-    // console.log(window.pageYOffset,document.body.offsetHeight,window.innerHeight);
 	  document.body.style.setProperty('--coffee-scroll', window.pageYOffset  / ((document.body.offsetHeight ) - window.innerHeight))
   })
 
@@ -22,7 +21,7 @@
 
 <main>
   <Navbar />
-  <div class="container section">
+  <div class="container section hero">
     <div class="content-wrapper">
       <div>
         <Title type="bigTitle" prefix="firstTitle" text="👋 Hi, " />
@@ -32,9 +31,6 @@
           prefix="thirdTitle"
           text="Full Stack Dev."
         />
-      </div>
-      <div>
-        <Button text="Contact me" primary />
       </div>
     </div>
     <div>
@@ -95,7 +91,10 @@
 </main>
 
 <style>
-  .content-wrapper {
+.hero{
+  margin-bottom: 30%;
+}
+.content-wrapper {
     display: flex;
     flex-flow: column wrap;
     row-gap: 2.5em;
