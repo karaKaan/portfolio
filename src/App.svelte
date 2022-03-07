@@ -4,7 +4,6 @@
   import Navbar from "./app/components/modules/Navbar/Navbar.svelte";
   import Title from "./app/components/elements/Title/Title.svelte";
   import Solar from "./app/components/modules/SolarImg/Solar.svelte";
-  import Button from "./app/components/elements/Buttons/Button.svelte";
   import Content from "./app/components/elements/Content/Content.svelte";
   import FadeRight from "./app/components/layout/Fade/FadeRight.svelte";
   import FadeLeft from './app/components/layout/Fade/FadeLeft.svelte'
