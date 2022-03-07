@@ -5,7 +5,7 @@
     export let href;
 </script>
 
-<a class='wrapper' href={href} >
+<a class='wrapper' href={href} target="_blank" >
     <Icon {icon} width={size}/>
 </a>
 
