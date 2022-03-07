@@ -2,7 +2,6 @@
     export let text
     export let href
     export let primary
-    export let outline
 </script>
 
 <button class="wrapper" class:primary={primary}>
