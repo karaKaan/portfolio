@@ -157,3 +157,96 @@ export const Softskill = writable([
     alt: 'That is an Illustration of a men who embraces things that he loves.',
   },
 ])
+
+export const Hardskill = writable([
+  {
+    id: 12,
+    icon: "fa-brands:js-square",
+    delay: 200,
+  },
+  {
+    id: 9,
+    icon: "akar-icons:react-fill",
+    delay: 300,
+  },
+  {
+    id: 10,
+    icon: "akar-icons:nextjs-fill",
+    delay: 400,
+  },
+  {
+    id: 11,
+    icon: "file-icons:test-typescript",
+        delay: 500,
+  },
+
+  {
+    id: 13,
+    icon: "akar-icons:html-fill",
+        delay: 600,
+  },
+  {
+    id: 14,
+    icon: "akar-icons:css-fill",
+        delay: 700,
+  },
+  
+  {
+    id: 7,
+    icon: "bxl:tailwind-css",
+        delay: 800,
+  },
+  {
+    id: 8,
+    icon: "file-icons:styledcomponents",
+        delay: 900,
+  },
+
+  
+  {
+    id: 15,
+    icon: "cib:svelte",
+        delay: 1000,
+  },
+
+  {
+    id: 16,
+    icon: "fa-brands:node-js",
+        delay: 1100,
+  },
+  {
+    id: 17,
+    icon: "bxl:vuejs",
+        delay: 1200,
+  },
+  {
+    id: 1,
+    icon: "bi:git",
+        delay: 1300,
+  },
+  {
+    id: 2,
+    icon: "file-icons:jest",
+        delay: 1400,
+  },
+  {
+    id: 3,
+    icon: "simple-icons:cypress",
+        delay: 1500,
+  },
+  {
+    id: 4,
+    icon: "ant-design:ci-circle-filled",
+        delay: 1600,
+  },
+  {
+    id: 5,
+    icon: "bxl:firebase",
+        delay: 1700,
+  },
+  {
+    id: 6,
+    icon: "carbon:sql",
+        delay: 1800,
+    },
+])

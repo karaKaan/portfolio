@@ -1,4 +1,6 @@
 <script>
+  import Icon from '@iconify/svelte'
+
   import Navbar from "./app/components/modules/Navbar/Navbar.svelte";
   import Title from "./app/components/elements/Title/Title.svelte";
   import Solar from "./app/components/modules/SolarImg/Solar.svelte";
@@ -8,7 +10,8 @@
   import FadeLeft from './app/components/layout/Fade/FadeLeft.svelte'
   import CoffeeAnim from './app/components/modules/CoffeeAnim/CoffeeAnim.svelte'
   import Box from './app/components/modules/SuprisingBox/Box.svelte'
-  import {Softskill} from './app/utils/stores/SkillsStore'
+  import {Softskill, Hardskill} from './app/utils/stores/SkillsStore'
+  
 
   window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset, document.body.offsetHeight,window.innerHeight);
@@ -27,7 +30,7 @@
         <Title
           type="bigTitle"
           prefix="thirdTitle"
-          text="Full Stack Developer."
+          text="Full Stack Dev."
         />
       </div>
       <div>
@@ -78,6 +81,16 @@
     {/each}
   </div>
 </div>
+<div class="container section hardskills">
+    <Title type='title' text='Hardskill' prefix='hardskills' />
+  <div  class="skill">
+    {#each $Hardskill as skill (skill.id)}
+    <div data-aos='fade-in' data-aos-delay="{skill.delay}">
+      <Icon icon={skill.icon} width={60} />
+    </div>
+    {/each}
+  </div>
+</div>
 </main>
 
 <style>
@@ -88,6 +101,16 @@
   }
   .softskills {
     flex-direction: column;
-
+  }
+  .hardskills {
+    flex-direction: column;
+  }
+  .skill{
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-;
+    column-gap: 5em;
+    row-gap: 2.5em;
   }
 </style>
