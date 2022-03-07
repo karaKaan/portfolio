@@ -14,8 +14,8 @@
   
 
   window.addEventListener('scroll', () => {
-    // console.log(window.pageYOffset, document.body.offsetHeight,window.innerHeight);
-	  document.body.style.setProperty('--coffee-scroll', (window.pageYOffset - 100 )/ (document.body.offsetHeight - window.innerHeight))
+    // console.log(window.pageYOffset,document.body.offsetHeight,window.innerHeight);
+	  document.body.style.setProperty('--coffee-scroll', window.pageYOffset  / ((document.body.offsetHeight ) - window.innerHeight))
   })
 
 </script>
@@ -83,7 +83,7 @@
 </div>
 <div class="container section hardskills">
     <Title type='title' text='Hardskill' prefix='hardskills' />
-  <div  class="skill">
+  <div class="skill">
     {#each $Hardskill as skill (skill.id)}
     <div data-aos='fade-in' data-aos-delay="{skill.delay}">
       <Icon icon={skill.icon} width={60} />
@@ -102,6 +102,7 @@
   .softskills {
     flex-direction: column;
   }
+
   .hardskills {
     flex-direction: column;
   }
@@ -109,8 +110,22 @@
     margin-top: 2em;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-;
+    justify-content: space-between;
     column-gap: 5em;
     row-gap: 2.5em;
   }
+
+  @media (min-width: 300px){
+    .row{
+      display: flex;
+      justify-content: center;
+      column-gap: 1em;
+      row-gap: 1em;
+    }
+
+    .skill{
+      justify-content: center;
+    }
+  }
+
 </style>

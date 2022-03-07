@@ -40,9 +40,10 @@
     display: inline-block;
     width: 250px;
     height: 250px;
-    margin-top: 2em;
+    margin-top: 1.5em;
     user-select: none;
     perspective: 1000px;
+    margin-bottom: 2.5em;
   }
   .card-inner {
     position: relative;

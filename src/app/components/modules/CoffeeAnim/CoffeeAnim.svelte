@@ -9,7 +9,11 @@
 </div>
 
 <style>
-    .coffee-cup{
+    .move-bottom{
+        display: none;
+    }
+    @media (min-width: 1400px) {
+        .coffee-cup{
         position: relative;
         border: 10px solid var(--neutral-white);
         width:  300px;
@@ -29,7 +33,7 @@
         animation-fill-mode: both;
     }
     .move-bottom{
-                
+        display: block;
         animation: moveBottom 1.5s infinite;
         animation-play-state: paused;
         animation-delay: calc(var(--coffee-scroll) * -1s);
@@ -80,5 +84,7 @@
         to {
             transform: rotate(360deg);
         }
+    }
+
     }
 </style>

@@ -37,6 +37,11 @@
   /* neutral Color */
   --neutral-white: #f4faff;
   --neutral-black: #1c1d21;
+  /* Device Sizes */
+  --screen-desktop: 1400px;
+  --screen-tablet: 800px;
+  --screen-mobile: 300px
+
 }
 
 html,
@@ -102,17 +107,43 @@ button {
 
 .container {
   display: flex;
-  justify-content: space-between;
-  width: 1400px;
-  margin: auto;
+  text-align: center;
+  justify-content: center;
 }
 .section {
   margin-bottom: 20%;
 }
 .row {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
+
+@media (min-width: 600px) {
+  .container {
+  max-width: 800px;
+  margin: auto;
+  }
+  .section {
+    margin-bottom: 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .section {
+    margin-bottom: 20%;
+  }
+}
+
+
+
 
 /* ANIMATION RUBBER */
 .rubber-span {
