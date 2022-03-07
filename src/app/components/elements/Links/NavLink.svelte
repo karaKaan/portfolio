@@ -1,9 +1,10 @@
 <script>
   export let text;
+  export let href;
 </script>
 
 <li class="link-wrapper">
-  <a href="/">{text}</a>
+  <a href={href}>{text}</a>
 </li>
 
 <style>
@@ -19,6 +20,7 @@
     .link-wrapper {
       padding: 0;
       transition: ease-in-out 150ms;
+      cursor: pointer;
     }
     .link-wrapper:hover {
       color: var(--primary-500);

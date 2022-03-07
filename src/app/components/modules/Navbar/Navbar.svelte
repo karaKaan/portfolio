@@ -13,9 +13,9 @@
       <h1>Kaan</h1>
     </div>
     <div class="nav-items">
-      <NavLink text={"About"} />
-      <NavLink text={"Skills"} />
-      <NavLink text={"Contact"} />
+      <NavLink text={"About"} href='#about' />
+      <NavLink text={"Skills"} href='#skills'/>
+      <NavLink text={"Contact"} href='#contact'/>
       <div class="icon-wrapper">
         <IconLink
           icon="akar-icons:github-fill"
@@ -36,10 +36,10 @@
         <div  class="burger-menu" in:fade={{duration:250}} out:fade={{delay:450}}>
           <div class="burger-items" >
             <div class="item" in:fly={{x: 100, delay:200}} out:fly={{x: -100, delay:400}}>
-              <NavLink text={"About"} />
+              <NavLink text={"About"} href={'#about'} />
             </div>
             <div class="item" in:fly={{x: 100, delay:250}} out:fly={{x: -100, delay:350}}>
-              <NavLink text={"Skills"} />
+              <NavLink text={"Skills"} href='#skills'/>
             </div>
             <div class="item" in:fly={{x: 100, delay:300}} out:fly={{x: -100, delay:300}}>
               <NavLink text={"Contact"} />

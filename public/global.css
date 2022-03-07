@@ -104,6 +104,12 @@ a {
 button {
   font-family: "Fira Sans Condensed", sans-serif;
 }
+input,
+input:active,
+input:focus{
+  outline: none;
+  border: none;
+}
 
 .container {
   display: flex;

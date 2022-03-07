@@ -41,7 +41,7 @@
       <Solar src="images/profile.png" />
     </div>
   </div>
-  <div class="container section">
+  <div id="about" class="container section">
     <FadeRight>
       <Title type="title" text="Me, Myself & I" prefix='me'/>
       <Content>
@@ -73,8 +73,8 @@
 		<CoffeeAnim />
 	</FadeLeft>
 </div>
-<div class="container section softskills">
-  <Title type='title' text='Softskills' prefix='softskills' />
+<div id="skills" class="container section softskills">
+    <Title type='title' text='Softskills' prefix='softskills' />
   <div class="row">
     {#each $Softskill as skill (skill.id) }
     <Box id={skill.id} prefix='softskill' title={skill.title} src={skill.imgSrc} alt={skill.alt} text={skill.text}/>
@@ -91,6 +91,7 @@
     {/each}
   </div>
 </div>
+
 </main>
 
 <style>
